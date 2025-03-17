@@ -6,16 +6,23 @@
 }
 
 .logo {
-  height: 6em;
+  height: 6rem;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
+  pointer-events: none;
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+.logo.react {
+  animation: logo-spin infinite 10s linear;
+}
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.logo.shark {
+  animation: logo-spin infinite 9s linear;
 }
 
 @keyframes logo-spin {
@@ -29,7 +36,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+    animation: logo-spin infinite 10s linear;
   }
 }
 
